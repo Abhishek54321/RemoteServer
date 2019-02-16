@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		129FA1E42218166C00554957 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 129FA1E32218166C00554957 /* .gitignore */; };
 		91E5662A1E4859570034E0DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E566291E4859570034E0DB /* AppDelegate.swift */; };
 		91E5662C1E4859570034E0DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E5662B1E4859570034E0DB /* ViewController.swift */; };
 		91E5662F1E4859570034E0DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91E5662D1E4859570034E0DB /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		129FA1E32218166C00554957 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		91E566261E4859570034E0DB /* RemoteServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemoteServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91E566291E4859570034E0DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91E5662B1E4859570034E0DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				91E566301E4859570034E0DB /* Assets.xcassets */,
 				91E566321E4859570034E0DB /* LaunchScreen.storyboard */,
 				91E566351E4859570034E0DB /* Info.plist */,
+				129FA1E32218166C00554957 /* .gitignore */,
 			);
 			path = RemoteServer;
 			sourceTree = "<group>";
@@ -124,6 +127,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				129FA1E42218166C00554957 /* .gitignore in Resources */,
 				91E566341E4859570034E0DB /* LaunchScreen.storyboard in Resources */,
 				91E566311E4859570034E0DB /* Assets.xcassets in Resources */,
 				91E5662F1E4859570034E0DB /* Main.storyboard in Resources */,
