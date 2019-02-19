@@ -4,24 +4,18 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>RemoteServer.xcscheme</key>
+		<key>Alamofire.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>0</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>RemoteServer.xcscheme_^#shared#^_</key>
+		<key>Pods-RemoteServer.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>0</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>91E566251E4859570034E0DB</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-	</dict>
+	<dict/>
 </dict>
 </plist>

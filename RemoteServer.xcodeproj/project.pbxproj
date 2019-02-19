@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		129FA1E42218166C00554957 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 129FA1E32218166C00554957 /* .gitignore */; };
+		4F3B329F2D58DB778BAEA1E4 /* Pods_RemoteServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF65075D72E9E8B6E46E6690 /* Pods_RemoteServer.framework */; };
 		91E5662A1E4859570034E0DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E566291E4859570034E0DB /* AppDelegate.swift */; };
 		91E5662C1E4859570034E0DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E5662B1E4859570034E0DB /* ViewController.swift */; };
 		91E5662F1E4859570034E0DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91E5662D1E4859570034E0DB /* Main.storyboard */; };
@@ -17,6 +18,8 @@
 
 /* Begin PBXFileReference section */
 		129FA1E32218166C00554957 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		2F36F17FC509AA9C47AA5FD4 /* Pods-RemoteServer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteServer.release.xcconfig"; path = "Pods/Target Support Files/Pods-RemoteServer/Pods-RemoteServer.release.xcconfig"; sourceTree = "<group>"; };
+		40630D32109EB8B3301A076B /* Pods-RemoteServer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteServer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RemoteServer/Pods-RemoteServer.debug.xcconfig"; sourceTree = "<group>"; };
 		91E566261E4859570034E0DB /* RemoteServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemoteServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91E566291E4859570034E0DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91E5662B1E4859570034E0DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		91E566301E4859570034E0DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91E566331E4859570034E0DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91E566351E4859570034E0DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF65075D72E9E8B6E46E6690 /* Pods_RemoteServer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RemoteServer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F3B329F2D58DB778BAEA1E4 /* Pods_RemoteServer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0468D8C78E2C3029FA098748 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				40630D32109EB8B3301A076B /* Pods-RemoteServer.debug.xcconfig */,
+				2F36F17FC509AA9C47AA5FD4 /* Pods-RemoteServer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		91E5661D1E4859570034E0DB = {
 			isa = PBXGroup;
 			children = (
 				91E566281E4859570034E0DB /* RemoteServer */,
 				91E566271E4859570034E0DB /* Products */,
+				0468D8C78E2C3029FA098748 /* Pods */,
+				F41886E8D6C06D13C62C4566 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +83,14 @@
 			path = RemoteServer;
 			sourceTree = "<group>";
 		};
+		F41886E8D6C06D13C62C4566 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF65075D72E9E8B6E46E6690 /* Pods_RemoteServer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 91E566381E4859570034E0DB /* Build configuration list for PBXNativeTarget "RemoteServer" */;
 			buildPhases = (
+				18E5519400D06917F4C2041A /* [CP] Check Pods Manifest.lock */,
 				91E566221E4859570034E0DB /* Sources */,
 				91E566231E4859570034E0DB /* Frameworks */,
 				91E566241E4859570034E0DB /* Resources */,
+				08EF89B941BC26384DF5381B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +161,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08EF89B941BC26384DF5381B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RemoteServer/Pods-RemoteServer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RemoteServer/Pods-RemoteServer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		18E5519400D06917F4C2041A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RemoteServer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		91E566221E4859570034E0DB /* Sources */ = {
@@ -265,6 +330,7 @@
 		};
 		91E566391E4859570034E0DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40630D32109EB8B3301A076B /* Pods-RemoteServer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -281,6 +347,7 @@
 		};
 		91E5663A1E4859570034E0DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F36F17FC509AA9C47AA5FD4 /* Pods-RemoteServer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
